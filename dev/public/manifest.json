@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "TechEvents information",
+    "description": "大学外部のテックイベントの情報を収集してくれる拡張機能",
+    "version": "0.0.1",
+    "permissions": ["storage", "tabs"],
+    "actions": {
+        "default_popup": "popup/popup.html"
+    },
+    "web_accessible_resources": [
+        {
+          "resources": [
+            "welcome/welcome.html"
+          ],
+          "matches": ["<all_urls>"]
+        }
+    ],
+    "background": {
+        "service_worker": "background/index.ts"
+    }
+}

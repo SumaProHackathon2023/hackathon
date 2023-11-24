@@ -2,13 +2,20 @@
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
+    "types": ["bun-types","web"],
     "lib": ["ESNext", "DOM"],
-    "moduleResolution": "Node",
+    "moduleResolution": "Bundler",
     "strict": true,
     "jsx": "react-jsx",
+    "moduleDetection": "force",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
     "allowImportingTsExtensions": true,
     "noEmit": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true
   },
   "include": ["src"],
 }
