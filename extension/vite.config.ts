@@ -4,7 +4,7 @@ import {defineManifest,crx} from "@crxjs/vite-plugin"
 /* import {name,version,description}  from "../package.json"*/
 import {resolve,join} from "path"
 
-type JsonPkg = Record<[key:string][number],string>
+export type JsonPkg = Record<[key:string][number],string>
 const package_json: JsonPkg = require("./package.json")
 
 const manifest = defineManifest({
