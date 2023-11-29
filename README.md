@@ -1,7 +1,7 @@
 # hackathon
 ハッカソンのリポジトリ
 
-##　そもそも入れないといれないものの手順
+## そもそも入れないといれないものの手順
 1. Node.js入れてください
 2. [Yarnを入れてください`npm -g install yarn`](https://qiita.com/kurararara/items/21c70c4adfd3bb323412)
 
