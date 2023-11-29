@@ -5,8 +5,8 @@ import {defineManifest,crx} from "@crxjs/vite-plugin"
 import {resolve,join} from "path"
 
 export type JsonPkg = Record<[key:string][number],string>
-const package_json: JsonPkg = require("./package.json")
-
+import package_json from "./package.json"
+// backgroundにservice_workerをなんとか入れたい
 const manifest = defineManifest({
   manifest_version: 3,
   name: package_json.name,
@@ -15,9 +15,6 @@ const manifest = defineManifest({
   action: {
     default_popup: "hello.html",
     default_title: "popup"
-  },
-  background: {
-    service_worker: "background.ts"
   }
 })
 // https://vitejs.dev/config/

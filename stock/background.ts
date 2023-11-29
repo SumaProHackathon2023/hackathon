@@ -1,4 +1,4 @@
-import {firestore} from "./firebase-init"
+import {firestore} from "./firebase-nit"
 import {collection,getDocs} from "firebase/firestore"
 
 /* type EventData = Record<"weblink"|"title"|"date"|"companyName",string>
@@ -18,6 +18,3 @@ class Event {
 
 const EventDatasSnapShot = collection(firestore,"event") 
 const EventDatas = await getDocs(EventDatasSnapShot)
-
-console.log(EventDatas)
-console.log("Background Hackathon Extension!")
