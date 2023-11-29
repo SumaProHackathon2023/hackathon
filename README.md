@@ -1,6 +1,11 @@
 # hackathon
 ハッカソンのリポジトリ
 
+##　そもそも入れないといれないものの手順
+1. Node.js入れてください
+2. [Yarnを入れてください`npm -g install yarn`](https://qiita.com/kurararara/items/21c70c4adfd3bb323412)
+
+
 ## 環境構築用の情報
 https://github.com/ulcttku/zenn/blob/main/articles/creating-chrome-extensions-with-react.md
 
