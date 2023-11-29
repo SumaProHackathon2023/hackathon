@@ -16,6 +16,9 @@ const manifest = defineManifest({
     default_popup: "hello.html",
     default_title: "popup"
   },
+  background: {
+    service_worker: "background.ts"
+  }
 })
 // https://vitejs.dev/config/
 export default defineConfig({
